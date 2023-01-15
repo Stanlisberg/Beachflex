@@ -1,21 +1,29 @@
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  /* color-scheme: light dark;
+  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
-html, body {
+/* html, body {
   height: 100%;
 }
 
@@ -24,4 +32,31 @@ html, body {
   padding:0;
   margin:0;
 }
+ */
 
+ :root {
+  --primary-dark: #5651e5;
+  --primary-light:#709dff;
+ }
+
+ @layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-[poppins]
+  }
+
+  li {
+    @apply p-4 text-sm
+  }
+
+  button {
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white
+  }
+
+  h2 {
+    @apply text-xl font-bold
+  }
+ }
