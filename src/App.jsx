@@ -3,7 +3,6 @@ import TopBar from "./components/TopBar"
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Activities1 from './components/Activities1'
-import Activities from './components/Activities'
 import Booking from './components/Booking'
 
 function App() {

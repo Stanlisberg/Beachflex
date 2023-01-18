@@ -11,8 +11,8 @@ function Booking() {
                         <option>Cozumel</option>
                     </select>
                 </div>
-                <div>
-                    <div>
+                <div className='flex w-full'>
+                    <div className='flex flex-col'>
                         <label>Check-In</label>
                         <input type='date' />
                     </div>
