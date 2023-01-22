@@ -1,4 +1,4 @@
-function Form() {
+function Contact() {
     return(
         <div>Hey!</div>
     )
