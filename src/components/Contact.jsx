@@ -1,6 +1,6 @@
 function Contact() {
     return(
-        <div id='contact' className='max-w-[1120px] w-full p-4 py-16'>
+        <div id='contact' className='max-w-[1155px] w-full p-4 py-16 m-auto'>
             <h2 className='text-center text-gray-700'>Send us a message</h2>
             <p className='text-center text-gray-700'>We're standing by!</p>
             <div className='grid md:grid-cols-2'>
@@ -9,15 +9,15 @@ function Contact() {
                    alt='/'
                    className='w-full md:h-full max-h-[500px] h-[200px] object-cover p-2 '
                  />
-                 <form>
-                    <div className='grid grid-cols-2'>
-                        < input className='border m-2 p-2' type='text'placeholder='first' />
-                        < input className='border m-2 p-2' type='text' placeholder='last' />
-                        < input className='border m-2 p-2' type='email' placeholder='email' />
-                        < input className='border m-2 p-2' type='tel' placeholder='phone' />
-                        < input className='border m-2 p-2 col-span-2 h-16' type='text' placeholder='address' />
-                        <textarea className='border col-span-2' cols='30' rows='10'></textarea>
-                        <button className='col-span-2'>Submit</button>
+                 <form className='md:h-[95%]'>
+                    <div className='grid grid-cols-2 md:h-full'>
+                        < input className='border m-2 p-2' type='text'placeholder='Firstname' />
+                        < input className='border m-2 p-2' type='text' placeholder='Lastname' />
+                        < input className='border m-2 p-2' type='email' placeholder='Email' />
+                        < input className='border m-2 p-2' type='tel' placeholder='Phone' />
+                        < input className='border m-2 p-2 col-span-2 h-16' type='text' placeholder='Address' />
+                        <textarea className='border col-span-2 m-2 p-2' cols='30' rows='10'></textarea>
+                        <button className='col-span-2 mt-2'>Submit</button>
                     </div>
                  </form>
             </div>
