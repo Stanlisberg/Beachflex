@@ -46,9 +46,10 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
+        onClick={handleNav}
         className={
           nav
-            ? "overflow-y-hidden md:hidden flex flex-col ease-in duration-300 absolute top-0 left-0 w-full h-screen border text-gray-300 px-4 py-7 bg-black"
+            ? "overflow-y-hidden md:hidden flex flex-col ease-in duration-300 absolute top-0 left-0 w-full h-screen border text-gray-300 px-4 py-7 bg-black/90"
             : "absolute top-0 h-screen left-[-100%] ease-in duration-500"
         }
       >
