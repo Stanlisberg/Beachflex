@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from "./components/TopBar"
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Activities1 from './components/Activities1'
+import Activities1 from './components/Activities'
 import Booking from './components/Booking'
 import Gallery from './components/gallery'
 import Contact from './components/Contact'

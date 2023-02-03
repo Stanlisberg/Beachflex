@@ -23,7 +23,7 @@
   -webkit-text-size-adjust: 100%;
 } */
 
-/* html, body {
+html, body {
   height: 100%;
 }
 
@@ -32,7 +32,7 @@
   padding:0;
   margin:0;
 }
- */
+
 
  :root {
   --primary-dark: #5651e5;
