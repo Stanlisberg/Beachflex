@@ -1,20 +1,17 @@
-import { BsChatSquareDots } from "react-icons/bs";
+import { useContext } from 'react'
+import BeachflexContext from "./context/BeachflexContext";
 import {
   FaFacebook,
   FaTwitter,
   FaGooglePlusG,
   FaInstagram,
   FaBars,
+  FaTimes,
 } from "react-icons/fa";
-import { useState } from "react";
 
 
 function Navbar() {
-    const [nav, setNav] = useState(false);
-
-    const handleNav = () => {
-        setNav(!nav);
-      };
+  const { nav, handleNav } = useContext(BeachflexContext);
 
   return (
     <div className=" w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80">
@@ -39,18 +36,24 @@ function Navbar() {
         <FaInstagram className="mx-4" />
       </div>
 
-       {/* hamburger Icon  */}
-      <div onClick={handleNav} className="sm:hidden z-10">
-        <FaBars size={20} className="mr-4 cursor-pointer" />
-      </div>
+      {/* hamburger Icon  */}
+      {nav === true ? (
+        <div className="sm:hidden z-10">
+          <FaBars size={20} className="mr-4 cursor-pointer" onClick= {handleNav}/>
+        </div>
+      ) : (
+        <div  className="sm:hidden z-10">
+          <FaTimes size={20} className="mr-4 cursor-pointer" onClick= {handleNav} />
+        </div>
+      )}
 
       {/* Mobile Menu */}
       <div
-        onClick={handleNav}
+        onClick={() => {handleNav}}
         className={
-          nav
-            ? "overflow-y-hidden md:hidden flex flex-col ease-in duration-300 absolute top-0 left-0 w-full h-screen border text-gray-300 px-4 py-7 bg-black/90"
-            : "absolute top-0 h-screen left-[-100%] ease-in duration-500"
+          !nav
+            ? " fixed overflow-y-hidden md:hidden flex flex-col ease-in duration-300 top-[55px] left-0 w-full h-full border text-gray-300 px-4 py-7 bg-black/90"
+            : "  fixed top-17 h-full left-[-100%] ease-in duration-500"
         }
       >
         <ul className="h-full w-full text-center pt-12">

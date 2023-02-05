@@ -7,20 +7,23 @@ import Booking from './components/Booking'
 import Gallery from './components/gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { BeachflexProvider } from './components/context/BeachflexContext'
 
 function App() {
 
   return (
-    <div className="App">
-      <TopBar />
-      <Navbar />
-      <Hero />
-      <Activities1 />
-      <Booking />
-      <Gallery />
-      <Contact />
-      <Footer />
-    </div>
+    <BeachflexProvider>
+      <div className="App">
+        <TopBar />
+        <Navbar />
+        <Hero />
+        <Activities1 />
+        <Booking />
+        <Gallery />
+        <Contact />
+        <Footer />
+      </div>
+    </BeachflexProvider>
   )
 }
 
