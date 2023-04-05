@@ -61,13 +61,13 @@ function Navbar() {
             <a href="/">Home</a>
           </li>
           <li className="text-xl py-8">
-            <a href="#gallery">Gallery</a>
+            <a href="#gallery"  onClick= {handleNav}>Gallery</a>
           </li>
           <li className="text-xl py-8">
-            <a href="#deals">Deals</a>
+            <a href="#deals" onClick= {handleNav}>Deals</a>
           </li>
           <li className="text-xl py-8">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick= {handleNav}>Contact</a>
           </li>
         </ul>
       </div>
